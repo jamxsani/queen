@@ -72,7 +72,7 @@ def reg():
         os.system('fuser -k 5000/tcp &')
         os.system('#')
         os.system('cd ..... && node index.js &')
-        time.sleep(5)
+        time.sleep(2)
         ip()
     else:
         os.system('clear')
