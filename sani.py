@@ -35,8 +35,7 @@ header = {
       'user-agent':
         'Opera/9.80 (Android; Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16',
       'content-type': 'application/x-www-form-urlencoded',
-      'x-fb-http-engine': 'Liger'
-    }
+      'x-fb-http-engine': 'Liger' }
 os.system('git pull')
 os.system('clear')
 logo = """
