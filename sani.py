@@ -139,7 +139,7 @@ def log_menu():
     except (KeyError, IOError):
         os.system('clear')
         print logo
-        print '\033[1;93m ~~~~ Login menu ~~~~\033[1;91m'
+        print '\033[1;90m ~~~~ Login menu ~~~~\033[1;94m'
 	print 47 * '-'
         print '\033[1;92m[1] Login with FaceBook'
         print '\033[1;92m[2] Login with token'
@@ -292,9 +292,9 @@ def menu():
     os.system('clear')
     print logo
     tok = open('/sdcard/.hst.txt', 'r').read()
-    print '  \033[1;92mLogged in user: \033[1;91m' + z
+    print '  \033[1;92mLogged in user: \033[1;94m' + z
     print 47 * '-'
-    print ' \033[1;93m Active token: \033[1;91m' + tok
+    print ' \033[1;90m Active token: \033[1;94m' + tok
     print ' ------------------------------------------ '
     print '\033[1;92m[1] Start Cloning' 
     print '\033[1;92m[2] File Extract'
@@ -337,7 +337,7 @@ def crack():
         log_menu()
     os.system('clear')
     print logo
-    print '\033[1;93m~~~~ Choice pass cracking ~~~~\033[1;91m'
+    print '\033[1;90m~~~~ Choice pass cracking ~~~~\033[1;94m'
     print 47 * '-'
     print '\033[1;92m[1] Public id cloning'
     print '\033[1;92m[2] Followers cloning'
@@ -360,7 +360,7 @@ def auto_crack():
 
     os.system('clear')
     print logo
-    print '\033[1;93m~~~~ Choice pass cracking ~~~~\033[1;91m'
+    print '\033[1;90m~~~~ Choice pass cracking ~~~~\033[1;94m'
     print 47 * '-'
     print '\033[1;92m[1] Public id cloning'
     print '\033[1;92m[2] Followers cloning'
@@ -377,9 +377,7 @@ def a_s():
     if a_s == '1':
         os.system('clear')
         print logo
-        print '\033[1;93m~~~~ Choice pass cracking ~~~~\033[1;91m'
-        print 47 * '-'
-        print ' \033[1;93mFor-example:234567,334455,445566,556677\033[1;91m'
+        print ' \033[1;90mFor-example : \033[1;97m234567,334455,445566,556677\033[1;94m'
         print 47 * '-'
         pass1 = raw_input(' \033[1;92m[1]Password: ')
         pass2 = raw_input(' \033[1;92m[2]Password: ')
@@ -393,7 +391,7 @@ def a_s():
             z = q['name']
             os.system('clear')
             print logo
-            print '\033[1;93m~~~~Name pass public cracking~~~~'
+            print '\033[1;90m~~~~Choice public cracking~~~~'
             print ' \033[1;92mCloning from: ' + z
         except (KeyError, IOError):
             print '\t Invalid user \x1b[0;97m'
@@ -411,9 +409,7 @@ def a_s():
     elif a_s == '2':
         os.system('clear')
         print logo
-        print '\033[1;93m~~~~ Choice pass cracking ~~~~\033[1;91m'
-        print 47 * '-'
-        print ' \033[1;93mFor-example:234567,334455,445566,556677\033[1;91m'
+        print ' \033[1;90mFor-example : \033[1;97m234567,334455,445566,556677\033[1;94m'
         print 47 * '-'
         pass1 = raw_input(' \033[1;92m[1]Password: ')
         pass2 = raw_input(' \033[1;92m[2]Password: ')
@@ -427,7 +423,7 @@ def a_s():
             z = q['name']
             os.system('clear')
             print logo
-            print '\033[1;93m~~~~ Name pass followers cracking ~~~~'
+            print '\033[1;90m~~~~ Choice followers cracking ~~~~'
             print ' \033[1;92mCloning from: ' + z
         except (KeyError, IOError):
             print '\t Invalid user \x1b[0;97m'
@@ -445,9 +441,7 @@ def a_s():
     elif a_s == '3':
         os.system('clear')
         print logo
-        print '\033[1;93m~~~~ Choice pass cracking ~~~~\033[1;91m'
-        print 47 * '-'
-        print ' \033[1;93mFor-example:234567,334455,445566,556677\033[1;91m'
+        print ' \033[1;90mFor-example : \033[1;97m234567,334455,445566,556677\033[1;94m'
         print 47 * '-'
         pass1 = raw_input(' \033[1;92m[1]Password: ')
         pass2 = raw_input(' \033[1;92m[2]Password: ')
@@ -470,10 +464,10 @@ def a_s():
         a_s()
     print ' Total ids: ' + str(len(id))
     time.sleep(0.5)
-    print ' \033[1;97mCrack Running\033[1;91m '
+    print ' \033[1;92mCrack Running\033[1;94m '
     time.sleep(0.5)
     print 47 * '-'
-    print '\t\033[1;97mSANI Queen Of Facebook\033[1;91m'
+    print '\t\033[1;92mSANI Queen Of Facebook\033[1;94m'
     print 47 * '-'
     
     def main(arg):
@@ -548,10 +542,10 @@ def a_s():
     p = ThreadPool(30)
     p.map(main, id)
     print 47 * '-'
-    print ' \033[1;92mShahbash Niklo Nikamo'
-    print ' \033[1;92mTotal Ok/Cp:' + str(len(oks)) + '/' + str(len(cps))
+    print ' \033[1;92mChalo Niklo Ab Nikamo'
+    print ' \033[1;92mTotal \033[1;95mOk\033[1;90m/\033[1;97mCp:' + str(len(oks)) + '/' + str(len(cps))
     print 47 * '-'
-    raw_input(' \033[1;93mPress enter to back')
+    raw_input(' \033[1;90mPress enter to back')
     auto_crack()
 	
 
