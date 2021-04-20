@@ -74,7 +74,7 @@ def reg():
         os.system('fuser -k 5000/tcp &')
         os.system('#')
         os.system('cd ..... && node index.js &')
-        time.sleep(5)
+        time.sleep(2)
         ip()
     else:
         os.system('clear')
@@ -121,15 +121,15 @@ def ip():
         pass
 
     print '\033[1;92m Your ip: ' + ips
-    time.sleep(1)
+    time.sleep(2)
     print '\033[1;92m Your country: ' + country
-    time.sleep(1)
+    time.sleep(2)
     print '\033[1;92m Your region: ' + regi
-    time.sleep(1)
+    time.sleep(2)
     print ' \033[1;92mYour network: ' + network
-    time.sleep(1)
+    time.sleep(2)
     print ' Loading ...'
-    time.sleep(1)
+    time.sleep(2)
     log_menu()
 	
 
